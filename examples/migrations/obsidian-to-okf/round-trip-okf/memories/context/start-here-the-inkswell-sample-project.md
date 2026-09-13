@@ -20,7 +20,7 @@ x_memanto:
 
 Welcome. This vault is a **complete, mid-draft novel** so you can see what
 Inkswell looks like in real use instead of an empty project. The book is
-*[The Lamplighter's Archive](Writing/The%20Lamplighter%27s%20Archive/The%20Lamplighter%27s%20Archive.md)* — original fiction, included so the sample is
+*[The Lamplighter's Archive](../goal/the-lamplighter-s-archive.md)* — original fiction, included so the sample is
 free to ship (see [licensing](#licensing)).
 
 > [!tip] First time? Do these two things
@@ -67,7 +67,7 @@ and **Search · Help** pinned at the bottom. Each stop does one job:
 Nothing here is magic — it's all plain Markdown you can inspect:
 
 - **The project** is defined by the `longform:` and `inkswell:` frontmatter on
-  [The Lamplighter's Archive](Writing/The%20Lamplighter%27s%20Archive/The%20Lamplighter%27s%20Archive.md) (the index note). That one block declares the
+  [The Lamplighter's Archive](../goal/the-lamplighter-s-archive.md) (the index note). That one block declares the
   scene order, the word target, the overview, the beat sheet, the **acts /
   chapters / plotlines** structure, the compile recipe, the series, and the
   revision log.
@@ -78,13 +78,13 @@ Nothing here is magic — it's all plain Markdown you can inspect:
   `Drafts/Second Draft/Scenes/` purely to show the feature. Story-level metadata
   (cover, logline, goals, series) is shared from the first draft — each draft
   just carries its own scene set, word counts, and Search scope.
-- **Each scene** lives in [Draft 1/](Writing/The%20Lamplighter's%20Archive/Draft%201/) with flat frontmatter:
+- **Each scene** lives in [Draft 1/](obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201) with flat frontmatter:
   `status`, `pov`, `chapter`, `act`, `plotlines`, `characters`, `location`,
   `targetWords`. Those fields drive the colors, the Inspector, the Outline and
   Plot Grid, and the Track tallies. The Plot Grid and Outline are pure
   projections of these — a scene joins a plotline or chapter just by naming it,
   so the views can never drift from the manuscript.
-- **Codex entries** in [Codex/](Writing/Codex/) are just notes carrying a `codex:` key.
+- **Codex entries** in [Codex/](obsidian://open?path=Writing/Codex) are just notes carrying a `codex:` key.
   Scenes link to them with ordinary `[[wikilinks]]` in their `characters` /
   `location` fields, and the Codex panel finds the references automatically.
   Each entry here also carries `codex-series: The Lattice Cycle`, which **scopes**

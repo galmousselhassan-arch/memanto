@@ -2,7 +2,6 @@
 type: artifact
 title: 05 - A Memory Not Her Own
 description: '[NOTE: OUTLINE ONLY — not yet drafted. Beat: Midpoint (false victory).]'
-timestamp: '2026-09-08T07:51:53.516814Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/05%20-%20A%20Memory%20Not%20Her%20Own.md
 x_memanto:
   type: artifact

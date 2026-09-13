@@ -1,8 +1,10 @@
 ---
 type: context
 title: 👋 Start Here — the Inkswell sample project
-description: 👋 Start Here — the Inkswell sample project
-timestamp: '2026-09-08T07:51:53.527730Z'
+description: Welcome. This vault is a **complete, mid-draft novel** so you can see
+  what Inkswell looks like in real use instead of an empty project. The book is *[[The
+  Lamplighter's Archive]]* — original fiction, included so the sample is free to ship
+  (see [licensing](#licensing)).
 resource: obsidian://open?path=_Start%20Here.md
 x_memanto:
   type: context

@@ -18,7 +18,7 @@ x_memanto:
 
 # The Lamplighter's Archive
 
-> *Book One of [The Lattice Cycle](../../Writing/Codex/Aszmar.md).*
+> *Book One of [The Lattice Cycle](../fact/aszmar.md).*
 
 This is the **project index** — Inkswell reads the `longform` and `inkswell`
 blocks above to assemble the project. You normally never edit this by hand;
@@ -26,7 +26,7 @@ the panels (Plan, Write, Track, Publish) write to it for you.
 
 Open the **Inkswell** view (pen-tool ribbon icon, or the command
 *"Open Inkswell projects"*) and this project will be listed. New here? Start
-with [_Start Here](../../_Start%20Here.md).
+with [_Start Here](../context/start-here-the-inkswell-sample-project.md).
 
 ## Logline
 

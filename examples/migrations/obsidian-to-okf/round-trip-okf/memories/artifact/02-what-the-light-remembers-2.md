@@ -16,9 +16,6 @@ x_memanto:
   updated_at: '2026-09-08T10:02:37.432129+00:00'
   type: artifact
 ---
-
-Second-draft note: another short stub, here to give the switcher a second scene to show.
-
 Second-draft note: another short stub, here to give the switcher a second scene to
 show.
 

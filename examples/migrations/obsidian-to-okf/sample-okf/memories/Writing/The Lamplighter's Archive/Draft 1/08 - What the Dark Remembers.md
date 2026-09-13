@@ -3,7 +3,6 @@ type: artifact
 title: 08 - What the Dark Remembers
 description: '[NOTE: OUTLINE ONLY — the Break-into-3 / Finale / Final-image beats,
   captured so the structure closes. Draft after the Act 2 scenes land.]'
-timestamp: '2026-09-08T07:51:53.519216Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/08%20-%20What%20the%20Dark%20Remembers.md
 x_memanto:
   type: artifact

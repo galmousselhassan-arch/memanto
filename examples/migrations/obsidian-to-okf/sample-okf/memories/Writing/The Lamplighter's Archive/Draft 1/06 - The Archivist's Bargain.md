@@ -2,7 +2,6 @@
 type: artifact
 title: 06 - The Archivist's Bargain
 description: '[NOTE: IDEA STAGE — captured so the beat and the Codex links exist.]'
-timestamp: '2026-09-08T07:51:53.518215Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/06%20-%20The%20Archivist%27s%20Bargain.md
 x_memanto:
   type: artifact

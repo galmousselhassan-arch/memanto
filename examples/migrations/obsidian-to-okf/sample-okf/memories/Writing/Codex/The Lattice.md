@@ -1,8 +1,8 @@
 ---
 type: fact
 title: The Lattice
-description: The Lattice
-timestamp: '2026-09-08T07:51:53.514439Z'
+description: 'The memory-grid of Aszmar: streets of lamps that drink the day from
+  the people who live beneath them. Mara tends one small, crooked stretch of it.'
 resource: obsidian://open?path=Writing/Codex/The%20Lattice.md
 x_memanto:
   type: fact

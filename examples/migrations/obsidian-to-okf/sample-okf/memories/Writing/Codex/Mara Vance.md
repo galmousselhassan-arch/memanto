@@ -1,8 +1,9 @@
 ---
 type: fact
 title: Mara Vance
-description: Mara Vance
-timestamp: '2026-09-08T07:51:53.513311Z'
+description: The lamplighter of Vesper Row, third of her line to tend the same crooked
+  posts. Fifteen clean years and no ambition beyond a finished row at midnight — until
+  a lamp shows her a memory that isn't hers.
 resource: obsidian://open?path=Writing/Codex/Mara%20Vance.md
 x_memanto:
   type: fact

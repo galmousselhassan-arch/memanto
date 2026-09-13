@@ -17,9 +17,6 @@ x_memanto:
   updated_at: '2026-09-08T10:02:37.432129+00:00'
   type: artifact
 ---
-
-The stair was where the old lighters' songs said it would be — behind the third lock-house on the canal, under a grate everyone had agreed for a generation was sealed.
-
 The stair was where the old lighters' songs said it would be — behind the third
 lock-house on the canal, under a grate everyone had agreed for a generation was
 sealed.

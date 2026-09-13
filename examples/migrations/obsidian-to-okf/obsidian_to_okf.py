@@ -8,7 +8,6 @@ import json
 import re
 import shutil
 from dataclasses import asdict, dataclass, field
-from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from typing import Any
 from urllib.parse import quote
@@ -57,16 +56,20 @@ def _normalise_tags(value: Any) -> list[str]:
     return sorted({item.strip().lstrip("#") for item in values if item.strip()})
 
 
+class InvalidFrontmatter(ValueError):
+    """Raised when an Obsidian note has frontmatter that cannot be preserved."""
+
+
 def _parse_note(text: str) -> tuple[dict[str, Any], str]:
     match = FRONTMATTER_RE.match(text)
     if not match:
         return {}, text
     try:
         metadata = yaml.safe_load(match.group(1)) or {}
-    except yaml.YAMLError:
-        metadata = {}
+    except yaml.YAMLError as exc:
+        raise InvalidFrontmatter("malformed YAML frontmatter") from exc
     if not isinstance(metadata, dict):
-        metadata = {}
+        raise InvalidFrontmatter("frontmatter must be a mapping")
     return metadata, text[match.end() :]
 
 
@@ -114,19 +117,20 @@ def _memory_type(metadata: dict[str, Any], relative: Path) -> str:
 def _description(body: str) -> str | None:
     without_code = re.sub(r"```.*?```", "", body, flags=re.DOTALL)
     for paragraph in re.split(r"\n\s*\n", without_code):
+        if re.fullmatch(r"#{1,6}\s+.+", paragraph.strip()):
+            continue
         cleaned = re.sub(r"^(?:#{1,6}|[-*>])\s*", "", paragraph.strip())
         if cleaned and not cleaned.startswith("!"):
             return re.sub(r"\s+", " ", cleaned)[:280]
     return None
 
 
-def _timestamp(metadata: dict[str, Any], source: Path) -> str:
+def _timestamp(metadata: dict[str, Any]) -> str | None:
     for key in ("timestamp", "date", "created", "created_at", "updated"):
         value = metadata.get(key)
         if value:
             return str(value)
-    modified = datetime.fromtimestamp(source.stat().st_mtime, tz=timezone.utc)
-    return modified.isoformat().replace("+00:00", "Z")
+    return None
 
 
 def _note_index(files: list[Path], root: Path) -> dict[str, list[Path]]:
@@ -183,10 +187,11 @@ def _rewrite_links(
             relative_url = destination.as_posix()
         label = alias or PurePosixPath(raw_target.split("#", 1)[0]).name
         report.wikilinks_converted += 1
+        encoded_destination = quote(f"{relative_url}{suffix}", safe="/#^")
         if match.group("embed"):
             report.embeds_converted += 1
-            return f"![{label}]({quote(relative_url, safe='/#')}{suffix})"
-        return f"[{label}]({quote(relative_url, safe='/#')}{suffix})"
+            return f"![{label}]({encoded_destination})"
+        return f"[{label}]({encoded_destination})"
 
     return WIKILINK_RE.sub(replace, body)
 
@@ -196,7 +201,9 @@ def _source_digest(files: list[Path], root: Path) -> str:
     for path in files:
         digest.update(path.relative_to(root).as_posix().encode())
         digest.update(b"\0")
-        digest.update(path.read_bytes())
+        # Text-mode newline normalization keeps receipts identical across
+        # Windows and POSIX checkouts of the same Git content.
+        digest.update(path.read_text(encoding="utf-8-sig").encode("utf-8"))
         digest.update(b"\0")
     return digest.hexdigest()
 
@@ -206,8 +213,8 @@ def convert_vault(source: Path, output: Path, *, dry_run: bool = False) -> Repor
     output = output.resolve()
     if not source.is_dir():
         raise ValueError(f"Vault is not a directory: {source}")
-    if output == source or source in output.parents:
-        raise ValueError("Output must be outside the source vault")
+    if output == source or source in output.parents or output in source.parents:
+        raise ValueError("Output must be outside and must not contain the source vault")
 
     files = sorted(
         path
@@ -223,7 +230,11 @@ def convert_vault(source: Path, output: Path, *, dry_run: bool = False) -> Repor
 
     for path in files:
         relative = path.relative_to(source)
-        metadata, body = _parse_note(path.read_text(encoding="utf-8-sig"))
+        try:
+            metadata, body = _parse_note(path.read_text(encoding="utf-8-sig"))
+        except InvalidFrontmatter:
+            report.skipped_files += 1
+            continue
         if not body.strip() and not metadata:
             report.skipped_files += 1
             continue
@@ -235,7 +246,7 @@ def convert_vault(source: Path, output: Path, *, dry_run: bool = False) -> Repor
             "title": _title(metadata, body, path),
             "description": _description(body),
             "tags": _normalise_tags(metadata.get("tags")),
-            "timestamp": _timestamp(metadata, path),
+            "timestamp": _timestamp(metadata),
             "resource": f"obsidian://open?path={quote(relative.as_posix())}",
             "x_memanto": {
                 "type": memory_type,

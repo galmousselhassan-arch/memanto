@@ -56,8 +56,18 @@ Exported: 21
 Completed in 8.05 s
 ```
 
-The generated memory bundle is checked in at `round-trip-okf/`. The unrelated
-local CLI session transcript was excluded from the public artifact; Memanto's
+The generated memory bundle is checked in at `round-trip-okf/`. A deterministic
+post-export normalization remaps source-relative Obsidian links to the flattened
+export paths, converts source-directory links to explicit `obsidian://` links,
+and removes repeated opening paragraphs introduced by export rendering:
+
+```text
+python normalize_export.py round-trip-okf
+Normalized 8 exported memories
+```
+
+This normalization changes neither record counts nor semantic content. The
+unrelated local CLI session transcript was excluded from the public artifact; Memanto's
 OKF loader intentionally scopes imports to `memories/`. Reloading the published
 post-Memanto memory artifact with the shipped importer produced:
 

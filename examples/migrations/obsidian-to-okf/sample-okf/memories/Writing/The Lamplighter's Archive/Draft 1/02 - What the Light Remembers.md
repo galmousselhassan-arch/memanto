@@ -2,7 +2,6 @@
 type: artifact
 title: 02 - What the Light Remembers
 description: It happened at the seventh lamp, the clean-burning one outside the locksmith's.
-timestamp: '2026-09-08T07:51:53.515488Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/02%20-%20What%20the%20Light%20Remembers.md
 x_memanto:
   type: artifact

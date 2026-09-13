@@ -4,7 +4,6 @@ title: 04 - The Undercroft
 description: The stair was where the old lighters' songs said it would be — behind
   the third lock-house on the canal, under a grate everyone had agreed for a generation
   was sealed.
-timestamp: '2026-09-08T07:51:53.516814Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/04%20-%20The%20Undercroft.md
 x_memanto:
   type: artifact

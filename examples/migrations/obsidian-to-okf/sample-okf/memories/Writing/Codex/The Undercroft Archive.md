@@ -1,8 +1,8 @@
 ---
 type: fact
 title: The Undercroft Archive
-description: The Undercroft Archive
-timestamp: '2026-09-08T07:51:53.514439Z'
+description: The place memory drains to when a row goes dark. The Bureau spent a generation
+  insisting it wasn't there. It was there the whole time, and it has been waiting.
 resource: obsidian://open?path=Writing/Codex/The%20Undercroft%20Archive.md
 x_memanto:
   type: fact

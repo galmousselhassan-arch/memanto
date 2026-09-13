@@ -3,7 +3,6 @@ type: artifact
 title: 03 - Inspector Coll
 description: Coll did not like the morning light in the lower districts. It was honest
   light, and honest light made people careful, and careful people were harder to read.
-timestamp: '2026-09-08T07:51:53.516814Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/03%20-%20Inspector%20Coll.md
 x_memanto:
   type: artifact

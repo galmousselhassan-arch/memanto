@@ -3,7 +3,6 @@ type: artifact
 title: 01 - The Last Lamp on Vesper Row
 description: The last lamp on Vesper Row stood crooked on its post, the way it had
   for as long as Mara could remember, and she loved it a little for that.
-timestamp: '2026-09-08T07:51:53.515488Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/01%20-%20The%20Last%20Lamp%20on%20Vesper%20Row.md
 x_memanto:
   type: artifact

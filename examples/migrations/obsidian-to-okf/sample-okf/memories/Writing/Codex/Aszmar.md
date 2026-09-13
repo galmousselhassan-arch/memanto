@@ -1,8 +1,8 @@
 ---
 type: fact
 title: Aszmar
-description: Aszmar
-timestamp: '2026-09-08T07:51:53.511881Z'
+description: The city and world of *The Lattice Cycle*. A place that solved the unbearable
+  weight of remembering by agreeing, collectively, to set it down each night.
 resource: obsidian://open?path=Writing/Codex/Aszmar.md
 x_memanto:
   type: fact

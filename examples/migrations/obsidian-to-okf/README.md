@@ -77,6 +77,15 @@ ruff check examples/migrations/obsidian-to-okf
 ruff format --check examples/migrations/obsidian-to-okf
 ```
 
+After `memanto memory export --okf`, normalize source-relative Obsidian links
+against the export's flattened memory layout (and remove any repeated opening
+paragraph introduced by the exporter):
+
+```bash
+python examples/migrations/obsidian-to-okf/normalize_export.py \
+  examples/migrations/obsidian-to-okf/round-trip-okf
+```
+
 ## Verified live round trip
 
 On 2026-09-08, the checked-in bundle was imported into a dedicated live

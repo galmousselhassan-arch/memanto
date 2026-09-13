@@ -1,8 +1,9 @@
 ---
 type: fact
 title: Lamplight Memory
-description: Lamplight Memory
-timestamp: '2026-09-08T07:51:53.513311Z'
+description: The soft magic of *The Lattice Cycle*. Codified here so every scene that
+  touches it stays consistent — and so the rules the plot will eventually break are
+  written down before they break.
 resource: obsidian://open?path=Writing/Codex/Lamplight%20Memory.md
 x_memanto:
   type: fact

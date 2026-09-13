@@ -16,9 +16,6 @@ x_memanto:
   updated_at: '2026-09-08T10:02:37.432129+00:00'
   type: artifact
 ---
-
-Coll did not like the morning light in the lower districts. It was honest light, and honest light made people careful, and careful people were harder to read.
-
 Coll did not like the morning light in the lower districts. It was honest light,
 and honest light made people careful, and careful people were harder to read.
 

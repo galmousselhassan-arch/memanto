@@ -16,9 +16,6 @@ x_memanto:
   updated_at: '2026-09-08T10:02:37.432129+00:00'
   type: artifact
 ---
-
-Second-draft note: this scene is a stub in the sample, kept short to demonstrate the draft switcher without duplicating the whole book.
-
 Second-draft note: this scene is a stub in the sample, kept short to demonstrate
 the draft switcher without duplicating the whole book.
 

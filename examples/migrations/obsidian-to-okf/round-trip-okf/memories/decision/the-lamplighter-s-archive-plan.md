@@ -18,7 +18,7 @@ x_memanto:
 
 # The Lamplighter's Archive — Plan
 
-*Planning note for [The Lamplighter's Archive](../../Writing/The%20Lamplighter%27s%20Archive/The%20Lamplighter%27s%20Archive.md). Inkswell reads the sections
+*Planning note for [The Lamplighter's Archive](../goal/the-lamplighter-s-archive.md). Inkswell reads the sections
 below into **Plan → Overview**; edit them there or here — it's the same note.*
 
 ## Synopsis

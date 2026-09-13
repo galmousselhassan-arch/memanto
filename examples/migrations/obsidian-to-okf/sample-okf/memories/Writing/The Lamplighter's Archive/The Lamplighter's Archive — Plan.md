@@ -1,8 +1,8 @@
 ---
 type: decision
 title: The Lamplighter's Archive — Plan
-description: The Lamplighter's Archive — Plan
-timestamp: '2026-09-08T07:51:53.525081Z'
+description: Planning note for [[The Lamplighter's Archive]]. Inkswell reads the sections
+  below into **Plan → Overview**; edit them there or here — it's the same note.*
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/The%20Lamplighter%27s%20Archive%20%E2%80%94%20Plan.md
 x_memanto:
   type: decision

@@ -3,7 +3,6 @@ type: artifact
 title: 01 - The Last Lamp on Vesper Row
 description: 'Second-draft note: this scene is a stub in the sample, kept short to
   demonstrate the draft switcher without duplicating the whole book.'
-timestamp: '2026-09-08T07:51:53.519722Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Drafts/Second%20Draft/Scenes/01%20-%20The%20Last%20Lamp%20on%20Vesper%20Row.md
 x_memanto:
   type: artifact

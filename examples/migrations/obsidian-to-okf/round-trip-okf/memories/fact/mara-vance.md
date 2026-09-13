@@ -24,7 +24,7 @@ lamp shows her a memory that isn't hers.
 
 > [!note] Codex entity
 > This is a **character** entry. Inkswell finds it by the `codex: character`
-> frontmatter key. Scenes that list `[Mara Vance](../../Writing/Codex/Mara%20Vance.md)` in their `characters` field
+> frontmatter key. Scenes that list `[Mara Vance](mara-vance.md)` in their `characters` field
 > show up automatically under *References* in the Codex panel.
 
 ---

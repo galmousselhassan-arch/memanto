@@ -1,8 +1,8 @@
 ---
 type: goal
 title: The Lamplighter's Archive — Second Draft
-description: The Lamplighter's Archive — Second Draft
-timestamp: '2026-09-08T07:51:53.524086Z'
+description: A second draft of the same project, kept deliberately short in the sample.
+  It's here to show Inkswell's **multi-draft** support.
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Drafts/Second%20Draft/The%20Lamplighter%27s%20Archive%20%E2%80%94%20Second%20Draft.md
 x_memanto:
   type: goal

@@ -1,8 +1,9 @@
 ---
 type: fact
 title: Inspector Coll
-description: Inspector Coll
-timestamp: '2026-09-08T07:51:53.513311Z'
+description: A Bureau auditor sent to explain a darkened row. He is far more troubled
+  by the lamplighter than by the lamps — and cannot say why, because the answer is
+  one of the things he long ago arranged not to keep.
 resource: obsidian://open?path=Writing/Codex/Inspector%20Coll.md
 x_memanto:
   type: fact

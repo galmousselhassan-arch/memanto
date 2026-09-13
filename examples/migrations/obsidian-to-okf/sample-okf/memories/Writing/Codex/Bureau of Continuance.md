@@ -1,8 +1,9 @@
 ---
 type: fact
 title: Bureau of Continuance
-description: Bureau of Continuance
-timestamp: '2026-09-08T07:51:53.511881Z'
+description: Administers the Lattice and guards the Accords. Its real work is maintenance
+  of a shared forgetting — which makes anyone who starts remembering, like Mara, a
+  problem it is institutionally unequipped to solve gently.
 resource: obsidian://open?path=Writing/Codex/Bureau%20of%20Continuance.md
 x_memanto:
   type: fact

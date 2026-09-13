@@ -1,8 +1,7 @@
 ---
 type: goal
 title: The Lamplighter's Archive
-description: The Lamplighter's Archive
-timestamp: '2026-09-08T07:51:53.525081Z'
+description: '*Book One of [[Aszmar|The Lattice Cycle]].*'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/The%20Lamplighter%27s%20Archive.md
 x_memanto:
   type: goal

@@ -2,7 +2,6 @@
 type: artifact
 title: 07 - Blackout
 description: '[NOTE: IDEA STAGE — the Act 3 low point, captured for now.]'
-timestamp: '2026-09-08T07:51:53.518215Z'
 resource: obsidian://open?path=Writing/The%20Lamplighter%27s%20Archive/Draft%201/07%20-%20Blackout.md
 x_memanto:
   type: artifact
