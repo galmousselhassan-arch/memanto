@@ -36,6 +36,8 @@ def test_conversion_is_importable_and_preserves_links(tmp_path: Path) -> None:
     assert "[[Missing]]" in rendered
     frontmatter = yaml.safe_load(rendered.split("---", 2)[1])
     assert frontmatter["type"] == "decision"
+    assert "[Ada](../People/Ada.md)" in frontmatter["description"]
+    assert "[[People/Ada|Ada]]" not in frontmatter["description"]
     assert frontmatter["x_obsidian"]["frontmatter"] == {
         "tags": ["projects", "decision"],
         "status": "active",

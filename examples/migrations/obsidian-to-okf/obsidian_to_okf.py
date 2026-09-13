@@ -244,7 +244,7 @@ def convert_vault(source: Path, output: Path, *, dry_run: bool = False) -> Repor
         frontmatter: dict[str, Any] = {
             "type": memory_type,
             "title": _title(metadata, body, path),
-            "description": _description(body),
+            "description": _description(converted_body),
             "tags": _normalise_tags(metadata.get("tags")),
             "timestamp": _timestamp(metadata),
             "resource": f"obsidian://open?path={quote(relative.as_posix())}",
